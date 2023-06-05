@@ -8,3 +8,4 @@ reducer: {
 });
 
 export * from "./thunks/fetchUsers";
+export * from "./thunks/addUser";
