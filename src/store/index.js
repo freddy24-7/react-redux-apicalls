@@ -6,3 +6,5 @@ reducer: {
     users: usersReducer,
     },
 });
+
+export * from "./thunks/fetchUsers";
