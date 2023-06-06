@@ -1,11 +1,22 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Leanne Graham"
+      "name": "Rita Russel",
+      "id": 1
+    },
+    {
+      "name": "Mable Bartoletti I",
+      "id": 2
+    },
+    {
+      "name": "Travis Osinski",
+      "id": 3
+    },
+    {
+      "name": "Dr. Brittany Reichel-Ledner",
+      "id": 4
     }
   ],
   "albums": [],
   "photos": []
 }
-
