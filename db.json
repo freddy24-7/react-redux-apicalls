@@ -9,14 +9,45 @@
       "id": 2
     },
     {
-      "name": "Travis Osinski",
+      "name": "Ebony Kirlin",
+      "id": 6
+    },
+    {
+      "name": "Jose Crooks DVM",
+      "id": 9
+    }
+  ],
+  "albums": [
+    {
+      "userId": 6,
+      "title": "Gorgeous Plastic Chicken",
+      "id": 1
+    },
+    {
+      "userId": 6,
+      "title": "Handmade Metal Keyboard",
+      "id": 2
+    },
+    {
+      "userId": 6,
+      "title": "Modern Frozen Mouse",
       "id": 3
     },
     {
-      "name": "Dr. Brittany Reichel-Ledner",
+      "userId": 6,
+      "title": "Electronic Soft Bike",
       "id": 4
+    },
+    {
+      "userId": 6,
+      "title": "Intelligent Fresh Sausages",
+      "id": 5
+    },
+    {
+      "userId": 9,
+      "title": "Bespoke Fresh Table",
+      "id": 6
     }
   ],
-  "albums": [],
   "photos": []
 }
