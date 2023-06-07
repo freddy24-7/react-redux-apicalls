@@ -15,6 +15,14 @@
     {
       "name": "Jose Crooks DVM",
       "id": 9
+    },
+    {
+      "name": "Mrs. Lynne Kozey-Runte",
+      "id": 10
+    },
+    {
+      "name": "Alan Bechtelar-Schuster",
+      "id": 11
     }
   ],
   "albums": [
@@ -47,7 +55,43 @@
       "userId": 9,
       "title": "Bespoke Fresh Table",
       "id": 6
+    },
+    {
+      "userId": 1,
+      "title": "Unbranded Fresh Table",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "title": "Practical Plastic Bike",
+      "id": 8
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 7,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3454782119346176",
+      "id": 1
+    },
+    {
+      "albumId": 7,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5445077807661056",
+      "id": 2
+    },
+    {
+      "albumId": 7,
+      "url": "https://loremflickr.com/150/150/abstract?lock=2356997378801664",
+      "id": 3
+    },
+    {
+      "albumId": 7,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1288017874518016",
+      "id": 4
+    },
+    {
+      "albumId": 7,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1521403224391680",
+      "id": 5
+    }
+  ]
 }
