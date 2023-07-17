@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# React Redux Photo Album App - Async and Thunks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React Redux photo album app that allows users to view and manage albums and photos.
+The code is based on Steven Grider's [React with Redux](https://www.udemy.com/course/react-redux/) course on Udemy.
+This project runs on a json server that provides a REST API for managing users, albums, and photos.
+The app uses Redux for state management and Redux Toolkit for simplified Redux development.
+The project illustrates the use of Thunks for handling asynchronous logic.
+It also uses Redux Toolkit Query for simplified data fetching and caching.
+To install json server, run the following command:
+npm install -g json-server
+Thereafter, to run the json server, run the following command:
+json-server --watch db.json --port 3005
+
+```
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+
+   ```
+   git clone <repository-url>
+   ```
+
+2. Install the dependencies:
+
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```
+   npm start
+   ```
+
+4. Open your browser and visit `http://localhost:3000` to see the app.
+
+## Project Structure
+
+The project has the following file structure:
+
+```
+├── public
+│   └── index.html
+├── src
+│   ├── apis
+│   │   ├── albumsApi.js
+│   │   └── photosApi.js
+│   ├── components
+│   │   ├── AlbumsList.js
+│   │   ├── AlbumsListItem.js
+│   │   ├── App.js
+│   │   ├── Button.js
+│   │   ├── ExpandablePanel.js
+│   │   ├── Panel.js
+│   │   ├── PhotosList.js
+│   │   ├── PhotosListItem.js
+│   │   ├── Skeleton.js
+│   │   ├── UsersList.js
+│   │   └── UsersListItem.js
+│   ├── slices
+│   │   └── usersSlice.js
+│   ├── store
+│   │   ├── index.js
+│   │   └── store.js
+│   ├── thunks
+│   │   ├── addUser.js
+│   │   ├── fetchUsers.js
+│   │   └── removeUser.js
+│   ├── hooks
+│   │   └── use-thunk.js
+│   ├── index.css
+│   └── index.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+```
+
+## Dependencies
+
+The project uses the following dependencies:
+
+- `react`: JavaScript library for building user interfaces.
+- `react-dom`: Provides DOM-specific methods for React.
+- `react-redux`: Official Redux bindings for React.
+- `redux`: Predictable state container for JavaScript apps.
+- `@reduxjs/toolkit`: Official Redux toolkit package.
+- `@reduxjs/toolkit/query`: Toolkit for simplified Redux data fetching and caching.
+- `axios`: Promise-based HTTP client for making API requests.
+- `classnames`: JavaScript utility for conditionally joining classNames together.
+- `faker`: JavaScript library for generating fake data.
+
+## Functionality
+
+The app provides the following functionality:
+
+- Fetches a list of users from the API.
+- Displays a list of users with their albums.
+- Allows adding and removing users.
+- Allows adding and removing albums for each user.
+- Displays a list of photos in each album.
+- Allows adding and removing photos in each album.
+
+## Redux Store
+
+The Redux store is configured with the following state slices:
+
+- `users`: Manages the list of users and their associated albums.
+- `albumsApi`: Handles API requests and caching related to albums.
+- `photosApi`: Handles API requests and caching related to photos.
+
+The store also includes middleware for handling API requests.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run the following scripts:
 
-### `npm start`
+- `npm start`: Runs the app in development mode.
+- `npm test`: Launches the test runner.
+- `npm run build`: Builds the app for production to the `build` folder.
+- `npm run eject`: Removes the single build dependency from your project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contributing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Contributions to the project are welcome. You can create a pull request with your proposed changes.
 
-### `npm test`
+## License
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the [MIT License](LICENSE).
