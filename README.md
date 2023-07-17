@@ -7,7 +7,7 @@ The app uses Redux for state management and Redux Toolkit for simplified Redux d
 The project illustrates the use of Thunks for handling asynchronous logic.
 It also uses Redux Toolkit Query for simplified data fetching and caching.
 To install json server, run the following command:
-npm install -g json-server
+npm install -g json-server.
 Thereafter, to run the json server, run the following command:
 json-server --watch db.json --port 3005
 
