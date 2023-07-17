@@ -37,48 +37,6 @@ To run the project locally, follow these steps:
 
 4. Open your browser and visit `http://localhost:3000` to see the app.
 
-## Project Structure
-
-The project has the following file structure:
-
-```
-├── public
-│   └── index.html
-├── src
-│   ├── apis
-│   │   ├── albumsApi.js
-│   │   └── photosApi.js
-│   ├── components
-│   │   ├── AlbumsList.js
-│   │   ├── AlbumsListItem.js
-│   │   ├── App.js
-│   │   ├── Button.js
-│   │   ├── ExpandablePanel.js
-│   │   ├── Panel.js
-│   │   ├── PhotosList.js
-│   │   ├── PhotosListItem.js
-│   │   ├── Skeleton.js
-│   │   ├── UsersList.js
-│   │   └── UsersListItem.js
-│   ├── slices
-│   │   └── usersSlice.js
-│   ├── store
-│   │   ├── index.js
-│   │   └── store.js
-│   ├── thunks
-│   │   ├── addUser.js
-│   │   ├── fetchUsers.js
-│   │   └── removeUser.js
-│   ├── hooks
-│   │   └── use-thunk.js
-│   ├── index.css
-│   └── index.js
-├── .gitignore
-├── package-lock.json
-├── package.json
-└── README.md
-```
-
 ## Dependencies
 
 The project uses the following dependencies:
